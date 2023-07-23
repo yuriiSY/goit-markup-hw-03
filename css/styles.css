@@ -26,6 +26,24 @@ ul,ol {
     margin-bottom: 0;
 }
 
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .address {
     font-style: normal;
     margin-left: auto;
@@ -55,6 +73,7 @@ ul,ol {
 .header {
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-logo {
@@ -65,7 +84,7 @@ ul,ol {
     line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    
+    margin-right: 76px;
 }
 
 .header-logo-simple {
@@ -81,6 +100,7 @@ ul,ol {
 .header-navigation {
     display: flex;
     gap: 76px;
+    align-items: center;
 }
 
 .header-menu-list {
@@ -155,6 +175,9 @@ ul,ol {
     border-radius: 4px;
     background: var(--iris, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    min-width: 169px;
+    height: 56px;
+    border: none;
 }
 
 .hero-order-btn:hover, .hero-order-btn:focus { 
@@ -183,6 +206,7 @@ ul,ol {
     font-weight: 500;
     line-height: 1.2;/* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advanteges-item-description {
@@ -205,6 +229,10 @@ ul,ol {
     display: flex;
     gap: 24px;
     margin: 0 auto;
+}
+
+.works-list-item {
+    width: calc((100% - 3 * 16px) / 3);
 }
 
 .works-title {
@@ -244,6 +272,14 @@ ul,ol {
 
 .team-list-item {
     background: var(--white);
+    width: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-item-details {
+    padding: 32px 0;
 }
 
 .team-item-name {
@@ -253,6 +289,8 @@ ul,ol {
     font-weight: 500;
     line-height: 1.2;/* 120% */
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-item-occupation {
@@ -262,6 +300,7 @@ ul,ol {
     font-weight: 400;
     line-height: 1.5;/* 150% */
     letter-spacing: 0.02em;
+    text-align: center;
 }
 
 /*PORTFOLIO*/
@@ -289,6 +328,10 @@ ul,ol {
     gap: 48px 24px;
 }
 
+.portfolio-works-item {
+    width: calc((100% - 48px) / 3);
+}
+
 .portfolio-options-btn {
     border: 1px solid var(--cornflower);
     background: var(--cloud, #F4F4FD);
@@ -313,6 +356,7 @@ ul,ol {
 .portfolio-options-btn:focus {
     color: var(--white);
     background-color: var(--ocean);
+    border: 1px solid transparent;
 }
 
 .portfolio-work-name {
@@ -350,6 +394,7 @@ ul,ol {
     text-transform: uppercase;
     display: block;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-logo-simple {
