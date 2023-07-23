@@ -8,11 +8,14 @@
     --cornflower: #E7E9FC;
 }
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #434455;
     background-color: #FFF;
-    margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -124,6 +127,7 @@ img {
     font-weight: 500;
     line-height: 1.5;/* 150% */
     letter-spacing: 0.02em;
+    padding: 24px 0;
 }
 
 .header-contacts-link {
@@ -359,12 +363,19 @@ img {
     border: 1px solid transparent;
 }
 
+.portfolio-works-details {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+}
+
 .portfolio-work-name {
     color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;/* 120% */
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-work-description {
