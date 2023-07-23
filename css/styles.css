@@ -1,13 +1,3 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #434455;
-    background-color: #FFF;
-}
-
-.address {
-    font-style: normal;
-}
-
 :root {
     --iris: #4D5AE5;
     --navyblue: #2E2F42;
@@ -18,12 +8,54 @@ body {
     --cornflower: #E7E9FC;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #434455;
+    background-color: #FFF;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.address {
+    font-style: normal;
+    margin-left: auto;
+}
+
+
 .link {
     text-decoration: none;
 }
 
 .list {
     list-style-type: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid #4D5AE5 ;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-logo {
@@ -34,6 +66,7 @@ body {
     line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 }
 
 .header-logo-simple {
@@ -44,6 +77,21 @@ body {
     line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.header-navigation {
+    display: flex;
+    gap: 76px;
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px
+}
+
+.header-contacts-list {
+    display: flex;
+    gap: 40px;
 }
 
 .header-menu-link:hover,
@@ -77,6 +125,8 @@ body {
 
 .hero {
     background-color: var(--navyblue);
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -86,6 +136,9 @@ body {
     font-weight: 700;
     line-height: 1.07;/* 107.143% */
     letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin: 0 auto 48px;
 }
 
 .hero-order-btn {
@@ -97,12 +150,33 @@ body {
     line-height: 1.5;/* 150% */
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 4px;
+    background: var(--iris, #4D5AE5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 .hero-order-btn:hover, .hero-order-btn:focus { 
     background-color: var(--ocean);
 }
 
 /*ADVANTEGES*/
+
+.advanteges {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.advanteges-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advanteges-list-item {
+    width: calc((100% - 3 * 24px) / 4);
+}
 
 .advanteges-item-subtitle {
     color: var(--navyblue);
@@ -118,9 +192,21 @@ body {
     font-weight: 400;
     line-height: 1.5;/* 150% */
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 /*WORKS*/
+
+.works {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.works-list {
+    display: flex;
+    gap: 24px;
+    margin: 0 auto;
+}
 
 .works-title {
     color: var(--navyblue);
@@ -130,12 +216,15 @@ body {
     line-height: 1.11;/* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
 
 /*TEAM*/
 
 .team {
     background-color: var(--cloud);
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -146,6 +235,12 @@ body {
     line-height: 1.11;/* 111.111% */
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-list-item {
@@ -172,9 +267,27 @@ body {
 
 /*PORTFOLIO*/
 
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
 .portfolio-work-item {
     border: 1px solid var(--cornflower);
     background: var(--white);
+}
+
+.portfolio-options-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72px;
+    gap: 24px;
+}
+
+.portfolio-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 }
 
 .portfolio-options-btn {
@@ -189,7 +302,13 @@ body {
     line-height: 1.5;/* 150% */
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid var(--cornflower, #E7E9FC);
+    background: var(--cloud, #F4F4FD);
+    display: block;
 }
+
 
 .portfolio-options-btn:hover,
 .portfolio-options-btn:focus {
@@ -218,6 +337,8 @@ body {
 
 .footer {
     background: var(--navyblue);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -228,6 +349,8 @@ body {
     line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-simple {
@@ -246,6 +369,7 @@ body {
     font-weight: 400;
     line-height: 1.5;/* 150% */
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 
