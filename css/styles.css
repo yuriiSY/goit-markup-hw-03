@@ -45,6 +45,7 @@ img {
 
 .address {
     font-style: normal;
+    margin-left: auto;
 }
 
 
@@ -107,7 +108,6 @@ img {
 .header-contacts-list {
     display: flex;
     gap: 40px;
-    margin-left: auto;
 }
 
 .header-menu-link:hover,
